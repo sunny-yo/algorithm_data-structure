@@ -1,10 +1,12 @@
 class Solution:
-    def twoSum(self, nums, target):
+    def twoSum(self, nums, target): # nums = [1, 3, 4, 2], target = 6
         num_dict = {}
+        for i, num in enumerate(nums): # {(0,1),(1,3),(2,4),(3,2)}
+            num_dict[num] = i # {1:0, 3:1, 4:2, 2:3}
         for i, num in enumerate(nums):
-            num_dict[num] = i
-        for i, num in enumerate(nums):
-            if target - num in num_dict and num_dict[target - num]:
+            # target-num 이 num_dict에 있고, 그 index가 현재의 index와 같지 않다면
+            if (target - num) in num_dict and (num_dict[target - num] != i):
+                # 현재 index와 target-num의 값을 갖는 index를 return
                 return [i, num_dict[target - num]]
 
 s = Solution()
