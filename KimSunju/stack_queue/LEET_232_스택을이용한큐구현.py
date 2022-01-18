@@ -15,7 +15,7 @@ class MyQueue:
         return self.output.pop()
 
     def peek(self) -> int:
-        if not self.output:
+        if not self.output:     # output 이 비어있으면
             while self.input:
                 self.output.append(self.input.pop())
         return self.output[-1]
