@@ -1,4 +1,4 @@
-from KimSunju.stack_queue.structures import Node, Stack, Queue
+from KimSunju.ch9_stack_queue.structures import Node, Stack, Queue
 
 
 def test_node():
