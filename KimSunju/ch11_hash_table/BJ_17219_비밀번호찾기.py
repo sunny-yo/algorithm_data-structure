@@ -9,6 +9,7 @@ for i in range(int(SITE)):
     site, pw = sys.stdin.readline().split()
     pw_dic[site] = pw
 
+print(pw_dic)
 for i in range(int(PW)):
     site = sys.stdin.readline().rsplit()[0]
     print(pw_dic[site])
