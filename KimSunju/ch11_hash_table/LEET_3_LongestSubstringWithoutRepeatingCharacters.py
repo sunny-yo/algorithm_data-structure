@@ -40,4 +40,4 @@ class Solution:
         return result
 
 s = Solution()
-print(s.lengthOfLongestSubstring(" asgsd asdfwes"))    ' asg' 'g'
+print(s.lengthOfLongestSubstring(" asgsd asdfwes"))
