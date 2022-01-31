@@ -10,6 +10,7 @@ for _ in range(N):
         pn_list.append(sys.stdin.readline().rstrip())
     pn_list.sort()
     pn.append(pn_list)
+print(pn)
 
 for pn_list in pn:
     state = True
