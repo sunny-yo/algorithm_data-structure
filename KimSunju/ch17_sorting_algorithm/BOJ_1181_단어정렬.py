@@ -30,6 +30,7 @@ def merge(arr1, arr2):
 
     return result
 
+
 def mergesort(lst):
     if len(lst) <= 1:
         return lst
@@ -37,6 +38,7 @@ def mergesort(lst):
     L = lst[:mid]
     R = lst[mid:]
     return merge(mergesort(L), mergesort(R))
+
 
 import sys
 
@@ -61,8 +63,7 @@ input_data = set()
 for _ in range(N):
     input_data.add(sys.stdin.readline().rstrip())
 
-result = sorted(list(input_data))
-result = sorted(result, key= lambda x: len(x))
+result = sorted(sorted(list(input_data)), key= lambda x: len(x))
 
 for _ in result:
     print(_)
